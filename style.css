@@ -1,3 +1,6 @@
+body{
+	background-image:url("../img/img.jpg")
+}
 *{
 	box-sizing:border-box;
 }
@@ -14,7 +17,7 @@ margin-bottom:15px;
 	border:2px solid black;
 	padding:0px;
 	margin:10px;
-	background-color:gold;
+	background-color:gray;
 	float:left;
 	
 }
@@ -27,12 +30,29 @@ margin-bottom:15px;
 	padding:10px;
 	
 }
+.h31{background-color:green;}
+.h32{background-color:pink;}
+.h33{background-color:gold;}
 
 p {
     padding: 20px;
     margin-top: 35px;
+	font-size:120%;
+	color:white;
 }
-
+footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+	color:white;
+	background-color:black;
+	padding:20px;
+	width:100%;
+}
+a:hover{
+	color:#f47c21;
+}
 @media (max-width:991px)and (min-width:768px){
 	.s1,.s2{width:45%}
 	.s3{width:92.48%}
