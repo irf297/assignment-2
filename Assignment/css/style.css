@@ -41,7 +41,8 @@ p {
 	color:white;
 }
 footer {
-    position: absolute;
+    position: fixed;
+	margin-top:30px;
     bottom: 0px;
     right: 0px;
     text-align: center;
