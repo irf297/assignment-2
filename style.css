@@ -171,20 +171,23 @@ a:hover{
 	.s1,.s2,.s3{width:95%}
 	
 }
-@media(max-width:464px){
+@media(max-width:555px){
 	a h1{
 		font-weight: 200;
+		font-size: 35px;
 		margin: auto;
 	}
 }
-@media(max-width:441px){
-	a h1{
-		font-size: 30px;
+@media(max-width:506px){
+	
+	.navbar-header,.button1{
+		margin:auto;
 	}
 }
+
 @media(max-width:391px){
 	a h1{
-		font-size: 20px;
+		font-size: 30px;
 		margin: auto;
 	}
 }
