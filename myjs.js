@@ -1,0 +1,3 @@
+myFunction() {
+    alert('hello');
+}

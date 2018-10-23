@@ -12,6 +12,12 @@ margin-bottom:15px;
 	width:100%;
 	
 }
+.button1{
+	    margin-right: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
 .section{
 	width:30%;
 	border:2px solid black;
@@ -19,7 +25,16 @@ margin-bottom:15px;
 	margin:10px;
 	background-color:gray;
 	float:left;
+	height: 100%;
+	box-shadow: 5px 10px 20px #000;
+	-webkit-animation: mymove 5s infinite;
+    animation: mymove 10s infinite;
 	
+	
+}
+.spacer{
+	height: 30px;
+	clear:both;
 }
 .s3{
 margin-bottom:50px;	
@@ -54,9 +69,99 @@ footer {
 	padding:20px;
 	width:100%;
 }
+.mynav{
+	background-image: linear-gradient(to right, green,pink , yellow);
+	border-bottom:2px solid black;
+	
+	
+}
+.navbar-brand{
+	color: black;
+	padding: 20px;
+	margin: 20px;
+}
+.navbar-brand:hover{
+	color: white;
+}
+.menus{
+	background-color:gray;
+	opacity:.9;
+	margin:auto;
+	color:white;
+	width:100%;
+	margin:0px;
+	padding:0px;	
+	text-align:center;
+	display:block;
+}
+.menus ul{
+		list-style:none;
+		width:100%;
+		margin:0px;
+	padding:0px;	
+		
+}
+
+.menus ul a li{
+	margin-bottom:5px;
+	padding:20px;
+	width:100%;
+	border-bottom:2px solid black;
+	box-sizing:border;
+}
+.menus ul  a{
+		
+	font-size:1.5em;
+	color:white;
+	text-decoration:none;
+	width:100%;
+	text-align:center;
+}
+.menus ul  a li:hover{
+		
+	background-color:#070707;
+}
+#menus{
+	display:none;
+}
+
+.navB{
+	border-radius: 10px;
+	float:right;
+}
+
 a:hover{
 	color:#f47c21;
 }
+#myBtn {
+	opacity:.7;
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@-webkit-keyframes mymove {
+    50% {box-shadow: 20px 40px 50px #000;}
+}
+
+@keyframes mymove {
+    50% {box-shadow: 20px 40px 50px #000;}
+}
+
 @media (max-width:991px)and (min-width:768px){
 	.s1,.s2{width:45%}
 	.s3{width:92.48%}
@@ -65,5 +170,27 @@ a:hover{
 @media(max-width:767px){
 	.s1,.s2,.s3{width:95%}
 	
-	
+}
+@media(max-width:464px){
+	a h1{
+		font-weight: 200;
+		margin: auto;
+	}
+}
+@media(max-width:441px){
+	a h1{
+		font-size: 30px;
+	}
+}
+@media(max-width:391px){
+	a h1{
+		font-size: 20px;
+		margin: auto;
+	}
+}
+@media(max-width:391px){
+	.centerM{
+		align :center !important;
+		margin:auto !important;
+	}
 }

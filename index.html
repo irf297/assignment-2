@@ -5,30 +5,172 @@
 	<title>My Assignment</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+var x=true;
+function myFunction() {
+
+
+	if(x){
+	document.getElementById("menus").style.display="block";
+	x=false;
+	}
+	else{
+	document.getElementById("menus").style.display="none";
+	x=true;
+	}
+    }
+	
+	window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+	</script>
+<script src="bootstrap-4.1.3/js/bootstrap.min.js"></script>
+
+
 	
 </head>
 <body>
-<div class="container">
-	<h1>Our Menu</h1>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<header class="">
+	<nav class="navbar navbar-default mynav">
+  <div class="container-fluid">
+<div class="row container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><h1 class="centerM">Irf297 Hotel</h1></a>
+    </div>
+	<div class="button1">
+    <ul class="nav navbar-nav centerM">
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">	
+    <nav class="navbar navbar-dark bg-dark navB">
+    <button class="navbar-toggler" id="hideShow" type="button" onclick="myFunction();" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+	  <div class="navbar-collapse collapse" id="navbarToggleExternalContent" style="">
+       
+      </div>
+      </ul>
+	  </div>
+    </div>
+  </div>
+</div>
+    </div>
+      </div>
+</nav>	  	
+	</header>
+	<div class="menus" id="menus">
+	<ul>
+	<a href="#chakin" onclick="myFunction();"><li>Chakin Items</li></a>
+	<a href="#beef" onclick="myFunction();"><li>Beef Items</li></a>
+	<a href="#sushi" onclick="myFunction();"><li>Sushi Items</li></a>
+	</ul>
+	</div>
+	
+	
+
+	<h1 >&nbsp;</h1>
 	<div class="myRow">
+	<div class="myRow" id="chakin" style="clear:both; width:100%;background-color:black;margin:0px;padding:0px;">
+	<h1 style="padding:20px;color:white;">Chakin Items</h1>
+	</div>
 	
 	<div class="section s1"><div class="myRow">
-	<h3 class="myh3 h31">chakin</h3></div>
-	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised</p>
+	<h3 class="myh3 h31">Chakin Halwa</h3></div>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
 	</div>
 	
 	<div class="section s2">
-	<h3 class="myh3 h32">Beef</h3>
-	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised</p>
+	<h3 class="myh3 h32">Chakin Masala</h3>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
 	</div>
 	<div class="section s3">
-	<h3 class="myh3 h33">Sushi</h3>
-	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised</p>
+	<h3 class="myh3 h33">Chakin Tmator</h3>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
 	</div>
 	
 	</div>
+	
+	<div class="myRow" id="beef" style="clear:both;width:100%;background-color:black;margin:0px;padding:0px;">
+	<h1 style="padding:20px;color:white;">Beef Items</h1>
+	</div>
+		<div class="myRow">
+	
+	<div class="section s1"><div class="myRow">
+	<h3 class="myh3 h31">Beef Amli</h3></div>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+	</div>
+	
+	<div class="section s2">
+	<h3 class="myh3 h32">Beef jlali</h3>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+	</div>
+	<div class="section s3">
+	<h3 class="myh3 h33">Beef Swadi</h3>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+	</div>
+	
+	</div>
+	
+		<div class="myRow">
+	<div class="myRow" id="sushi" style="clear:both;width:100%;background-color:black;margin:0px;padding:0px;">
+	<h1 style="padding:20px;color:white;">Sushi Items</h1>
+	</div>
+	<div class="section s1"><div class="myRow">
+	<h3 class="myh3 h31">Sushi Mastrid</h3></div>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+	</div>
+	
+	<div class="section s2">
+	<h3 class="myh3 h32">Sushi Qawali</h3>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+	</div>
+	<div class="section s3">
+	<h3 class="myh3 h33">Sushi Rowadi</h3>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+	</div>
+	
+	</div>
+	
+	<div class="spacer"></div>
+	<h1 >&nbsp;</h1>
 	<footer> <div>Copyright©&nbsp;reserved&nbsp;2018|<a href="facebook.com/irf297">Contact&nbsp;us</a>|</div></footer>
 	
 	</div>
+	
+
 </body>
 </html>
