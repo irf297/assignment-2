@@ -152,6 +152,9 @@ a:hover{
 .mystyle{
 	clear:both; width:100%;background-color:black;margin:0px;padding:0px;
 }
+.myh1{
+	padding:20px;color:white;
+}
 
 #myBtn:hover {
   background-color: #555;
