@@ -149,6 +149,9 @@ a:hover{
   padding: 15px;
   border-radius: 4px;
 }
+.mystyle{
+	clear:both; width:100%;background-color:black;margin:0px;padding:0px;
+}
 
 #myBtn:hover {
   background-color: #555;
