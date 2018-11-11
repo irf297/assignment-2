@@ -11,9 +11,8 @@
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
   <script>
     var randomCategoryShortName='A';
-    var mycount1=0;
-    function setMenu(mycount){
-       
+    function setMenu(){
+       let mycount=Math.floor((Math.random() * 10) + 1);
       switch(mycount){
         case 0:
           randomCategoryShortName='F';
@@ -27,11 +26,32 @@
           case 3:
           randomCategoryShortName='D';
           break;
+          case 4:
+          randomCategoryShortName='L';
+          break;
+          case 5:
+          randomCategoryShortName='PF';
+          break;
+          case 6:
+          randomCategoryShortName='NS';
+          break;
+          case 7:
+          randomCategoryShortName='NF';
+          break;
+          case 8:
+          randomCategoryShortName='NL';
+          break;
+          case 9:
+          randomCategoryShortName='SO';
+          break;
+          case 10:
+          randomCategoryShortName='SP';
+          break;
+        default:
+          randomCategoryShortName='SR';
+          break;
       }
    
-      if(mycount=>3){
-      mycount1=0;
-      }
     }
     </script>
   
@@ -68,7 +88,7 @@
                 <span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
             <li id="navMenuButton">
-              <a href="#" onclick="$dc.loadMenuItems(randomCategoryShortName);setMenu(mycount1++);">
+              <a href="#" onclick="$dc.loadMenuItems(randomCategoryShortName);setMenu();">
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
             </li>
             <li>
