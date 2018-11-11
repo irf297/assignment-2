@@ -10,9 +10,10 @@
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
   <script>
-    var randomCategoryShortName='CSR';
+    var randomCategoryShortName='A';
     var mycount=0;
     function setMenu(){
+       mycount++;
       switch(mycount){
         case 0:
           randomCategoryShortName='A';
@@ -27,7 +28,7 @@
           randomCategoryShortName='CSR';
           break;
       }
-    mycount++;
+   
       if(mycount=>3){
       mycount=0;
       }
