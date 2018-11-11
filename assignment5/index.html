@@ -11,12 +11,12 @@
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
   <script>
     var randomCategoryShortName='A';
-    var mycount=0;
+    var mycount1=0;
     function setMenu(mycount){
        
       switch(mycount){
         case 0:
-          randomCategoryShortName='A';
+          randomCategoryShortName='F';
           break;
           case 1:
           randomCategoryShortName='B';
@@ -30,7 +30,7 @@
       }
    
       if(mycount=>3){
-      mycount=0;
+      mycount1=0;
       }
     }
     </script>
@@ -68,7 +68,7 @@
                 <span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
             <li id="navMenuButton">
-              <a href="#" onclick="$dc.loadMenuItems(randomCategoryShortName);setMenu(mycount++);">
+              <a href="#" onclick="$dc.loadMenuItems(randomCategoryShortName);setMenu(mycount1++);">
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
             </li>
             <li>
