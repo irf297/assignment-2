@@ -12,8 +12,8 @@
   <script>
     var randomCategoryShortName='A';
     var mycount=0;
-    function setMenu(){
-       mycount++;
+    function setMenu(mycount){
+       
       switch(mycount){
         case 0:
           randomCategoryShortName='A';
@@ -25,7 +25,7 @@
           randomCategoryShortName='CM';
           break;
           case 3:
-          randomCategoryShortName='CSR';
+          randomCategoryShortName='D';
           break;
       }
    
@@ -68,7 +68,7 @@
                 <span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
             <li id="navMenuButton">
-              <a href="#" onclick="$dc.loadMenuItems(randomCategoryShortName);setMenu();">
+              <a href="#" onclick="$dc.loadMenuItems(randomCategoryShortName);setMenu(mycount++);">
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
             </li>
             <li>
