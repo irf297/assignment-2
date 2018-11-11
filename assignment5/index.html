@@ -9,6 +9,31 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <script>
+    var randomCategoryShortName;
+    var mycount=0;
+    function setMenu(){
+      switch(mycount){
+        case 0:
+          randomCategoryShortName='A';
+          break;
+          case 1:
+          randomCategoryShortName='B';
+          break;
+          case 2:
+          randomCategoryShortName='CM';
+          break;
+          case 3:
+          randomCategoryShortName='CSR';
+          break;
+      }
+    mycount++;
+      if(mycount=>3){
+      mycount=0;
+      }
+    }
+    </script>
+  
   </head>
 <body>
   <header>
@@ -42,7 +67,7 @@
                 <span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
             <li id="navMenuButton">
-              <a href="#" onclick="$dc.loadMenuItems('SP');">
+              <a href="#" onclick="$dc.loadMenuItems(randomCategoryShortName);">
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
             </li>
             <li>
